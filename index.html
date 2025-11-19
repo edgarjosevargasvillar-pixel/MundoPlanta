@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MundoPlanta - Tienda de Cultivo de Plantas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MundoPlanta</div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#consejos">Consejos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button id="toggle-dark" title="Modo claro/oscuro">🌙</button>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Bienvenido a MundoPlanta</h1>
+            <p>Tu tienda en línea especializada en cultivo de plantas, macetas y mucho más. Descubre nuestro mundo verde y crece con nosotros.</p>
+        </section>
+
+        <section id="tienda" class="shop">
+            <h2>Nuestros Productos</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Planta Monstera">
+                    <h3>Monstera Deliciosa</h3>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Maceta Cerámica">
+                    <h3>Maceta Cerámica</h3>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_KjIqFQPkA6FExs6iv7tQJ9GALctwEH7fQ&s" alt="Sustrato Universal">
+                    <h3>Sustrato Universal</h3>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas Especiales</h2>
+            <p>¡Este mes, 20% de descuento en la Monstera Deliciosa!</p>
+        </section>
+
+        <section id="consejos" class="tips">
+            <h2>Consejos para el Cultivo</h2>
+            <ul>
+                <li>Usa tierras de calidad y abona regularmente.</li>
+                <li>Luz indirecta mantiene las hojas verdes y saludables.</li>
+                <li>Evita el exceso de riego para proteger las raíces.</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Email: contacto@mundoplanta.com | Tel: 555-123456</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 MundoPlanta - Todos los derechos reservados
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
